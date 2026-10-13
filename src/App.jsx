@@ -6,7 +6,7 @@ import Home from './pages/Home'
 import Products from './pages/Products'
 import Counter from './components/Counter'
 import Weather from './pages/Weather'
-// import Toggle from './components/Toggle'
+import Toggle from './components/Toggle'
 
 const App = () => {
   return (
@@ -19,6 +19,7 @@ const App = () => {
                         <Route path="/products" element={<Products/>}/>
                         <Route path="/counter-app" element={<Counter/>}/>
                         <Route path="/weather-data" element={<Weather/>}/>
+                        <Route path="/toggle" element={<Toggle/>}/>
                   </Routes>
               <Footer/>
         </BrowserRouter>

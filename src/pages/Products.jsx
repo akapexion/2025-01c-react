@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const Products = () => {
 
@@ -16,7 +16,9 @@ const Products = () => {
     }
   }
 
-  productsAPI();
+  useEffect(() => {
+    productsAPI();
+  }, []);
 
   return (
     <>
